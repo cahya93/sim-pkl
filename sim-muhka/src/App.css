@@ -1,0 +1,16 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.app .app-navbar {
+  justify-content: flex-start;
+  height: 10vh;
+}
+.app .app-body {
+  height: 90vh;
+  margin: 15px;
+}
+.app .app-footer {
+  height: 10vh;
+}

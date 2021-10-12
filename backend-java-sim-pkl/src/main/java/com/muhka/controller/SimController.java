@@ -11,7 +11,7 @@ import java.util.List;
 
 @CrossOrigin(origins = "*")
 @RestController
-@RequestMapping("/restapi/")
+@RequestMapping("/api/")
 public class SimController {
     @Autowired
     private UsersRepository usersRepository;

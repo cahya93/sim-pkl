@@ -1,7 +1,12 @@
 const userList = {
   statusLogin: false,
   listUser: [],
-  dataLogin: [],
+  dataLogin: [
+    {
+      username: "Eko Cahyanto",
+      email: "ekocahyanto007@gmail.com",
+    },
+  ],
 };
 
 const userReducer = (state = userList, action) => {
@@ -19,7 +24,7 @@ const userReducer = (state = userList, action) => {
         statusLogin: true,
         dataLogin: payload.isLogin,
       };
-    case "LOGOUT":
+    case "LOGOUT_OK":
       return userList;
     default:
       return state;

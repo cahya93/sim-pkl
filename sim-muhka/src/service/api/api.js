@@ -6,5 +6,9 @@ class Api {
   getUser() {
     return axios.get(API_URL + "users");
   }
+
+  getJurusan() {
+    return axios.get(API_URL + "get-jurusan");
+  }
 }
 export default new Api();

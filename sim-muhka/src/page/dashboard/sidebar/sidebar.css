@@ -1,0 +1,33 @@
+.sidebar {
+  min-height: 100%;
+}
+.sidebar .logo-sidebar {
+  display: flex;
+  margin: 10px;
+  font-size: x-large;
+  font-weight: bolder;
+  align-items: center;
+  color: white;
+}
+.sidebar .logo-sidebar img {
+  height: 35px;
+  border-radius: 5px;
+}
+
+.sidebar-status {
+  margin: 0 10px;
+  font-size: 15px;
+  color: rgb(216, 214, 214);
+  margin-bottom: 15px;
+}
+
+.display-menu {
+  background-color: #ffa400;
+  margin-left: 25px;
+  border-radius: 5px;
+}
+.display-menu .menu {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}

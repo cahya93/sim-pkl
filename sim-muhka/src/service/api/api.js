@@ -1,20 +1,10 @@
-// const API_URL = "http://yantodev.ddns.net/data/api_server/";
-const API_URL = "http://192.168.2.254:8080/restapi/";
+import axios from "axios";
+
+const API_URL = "http://yantodev.ddns.net:8080/api/";
 
 class Api {
-  getUser = () => {
-    return fetch(API_URL + "users", {
-      method: "GET",
-    })
-      .then(function (respon) {
-        console.log(`respon`, respon);
-        return respon.json();
-      })
-      .then(function (data) {
-        let allData = JSON.parse(JSON.stringify(data));
-        console.log("data user", allData);
-        return allData;
-      });
-  };
+  getUser() {
+    return axios.get(API_URL + "users");
+  }
 }
 export default new Api();
